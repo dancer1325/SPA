@@ -4,8 +4,16 @@
 
 <div class="card-columns">
 
-<!-- *ngFor="let heroe of heroes; let i = index" -->
-  <app-heroe-tarjeta (heroeSeleccionado)="verHeroe( $event )" [heroe]="foo" [index]="i"  *ngFor="let foo of heroes; let i = index"></app-heroe-tarjeta>
+    <!-- *ngFor="let heroe of heroes; let i = index" -->
+    <app-heroe-tarjeta (heroeSeleccionado)="verHeroe( $event )" [heroe]="foo" [index]="i" *ngFor="let foo of heroes; let i = index"></app-heroe-tarjeta>
+    <!-- Previous line is configured to share data parent component -> children components -->
+    <!-- This file is the parent html template -->
+    <!-- app-heroe-tarjeta  : Child component -->
+    <!-- heroe   : Property from child which is going to be filled out-->
+    <!-- index   : Property from child which is going to be filled out-->
+    <!-- foo     : Property in the parent whose value is going to be mapped to the proper one in the child component. foo is each element of heroes-->
 
+    <!-- Previous line is also configured to share data children component -> parent components -->
+    <!-- heroeSeleccionado   : Event emitted from app-heroe-tarjeta -->
 
 </div>

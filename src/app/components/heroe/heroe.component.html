@@ -1,4 +1,6 @@
 <h1 class="animated fadeIn">{{ heroe.nombre | uppercase }} <small>({{ heroe.aparicion | date:'y' }})</small></h1>
+<!-- animated is a style to add animations while it's switched from a component to another -->
+<!-- Apply for pipes.  uppercase and date -->
 <hr>
 
 <div class="row animated fadeIn fast">
@@ -19,6 +21,7 @@
         </p>
         <div>
             <img *ngIf="heroe.casa == 'Marvel'" class="img-logo" src="assets/img/marvel-logo.png" alt="DC">
+            <!-- img-logo is a customized style -->
             <img *ngIf="heroe.casa == 'DC'" class="img-logo" src="assets/img/dc-logo.jpg" alt="Marvel">
         </div>
 

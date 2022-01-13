@@ -11,14 +11,18 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
 
-            <!-- active -->
-            <li class="nav-item" routerLinkActive="active">
+            <!-- Navigation based on routerLink -->
+            <!-- routerLinkActive is the directive  to track if the linked route of an element is currently active -->
+            <li class="nav-item" routerLinkActive="blablabkla">
+                <!-- Once the focus is lost, the visual distinction doesn't stay -->
                 <a class="nav-link" [routerLink]="['home']">Home</a>
             </li>
-            <li class="nav-item" routerLinkActive="active">
+            <li class="nav-item" routerLinkActive="active-link">
+                <!-- Once the focus is lost, the visual distinction doesn't stay -->
                 <a class="nav-link" [routerLink]="['heroes']">Heroes</a>
             </li>
             <li class="nav-item" routerLinkActive="active">
+                <!-- Although the focus is lost, the visual distinction stays -->
                 <a class="nav-link" [routerLink]="['about']">About</a>
             </li>
         </ul>

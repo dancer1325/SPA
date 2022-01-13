@@ -9,8 +9,8 @@ const APP_ROUTES: Routes = [
   { path: "home", component: HomeComponent },
   { path: "about", component: AboutComponent },
   { path: "heroes", component: HeroesComponent },
-  { path: "heroe/:id", component: HeroeComponent },
-  { path: "buscar/:termino", component: BuscadorComponent },
+  { path: "heroe/:id", component: HeroeComponent }, // :id  === Path params with key id
+  { path: "buscar/:termino", component: BuscadorComponent }, // :termino  === Path params with key termino
   { path: "**", pathMatch: "full", redirectTo: "home" }, // Default route. If some path doesn't match with any route --> It will be redirected to this route
 ];
 
