@@ -14,4 +14,6 @@ const APP_ROUTES: Routes = [
   { path: "**", pathMatch: "full", redirectTo: "home" }, // Default route. If some path doesn't match with any route --> It will be redirected to this route
 ];
 
+// useHash: Show "#" or not while you navigate in the app by the different pages
 export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES, { useHash: false });
+// export const APP_ROUTING = RouterModule.forRoot(APP_ROUTES, { useHash: true });
